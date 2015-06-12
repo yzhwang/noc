@@ -5,5 +5,5 @@ all:
 	g++ -o test_turtle \
 	    tests/turtle.c noc_turtle.c \
 	    -Wall \
-	    -O0 -fsanitize=address -g \
-	    -I ./ -lglfw -lGLEW -lGL -lm -lasan
+	    -O0 -g \
+	    -I ./ -lglfw3 -lGLEW -lGL -lm -lXrandr -lXcursor -lXinerama -lXi
